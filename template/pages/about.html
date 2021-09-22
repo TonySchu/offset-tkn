@@ -1,0 +1,499 @@
+<!-- - var ATTRS_MAIN = { id: 'top', class: 'main' };-->
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Spin</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main>
+      <nav class="navbar navbar-expand-lg navbar-dark font-weight-semi-bold p-0 fixed-top">
+        <div class="container bg-black px-sm-0"><a class="navbar-brand ml-lg-3 ml-3 py-2 py-lg-0" href="index.html"><img src="assets/img/logos/spin_logo.png" alt="" width="60" /></a>
+          <button class="navbar-toggler collapsed mr-lg-0 mr-4" type="button" data-toggle="collapse" data-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse pl-3" id="navbarStandard">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown dropdown-menu-on-hover"><a class="dropdown-toggle text-white nav-link" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <div class="dropdown-menu"><a class="dropdown-item fs-0" href="index.html">Home</a><a class="dropdown-item fs-0" href="index-rtl.html">Home RTL</a><a class="dropdown-item fs-0" href="blog.html">Blog</a><a class="dropdown-item fs-0" href="contact.html">Contact</a><a class="dropdown-item fs-0" href="about.html">About</a><a class="dropdown-item fs-0" href="faq.html">FAQ</a></div>
+              </li>
+              <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link text-white dropdown-toggle text-white" id="navbarDropdownDocumentation" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownDocumentation"><a class="dropdown-item fs-0" href="documentation/getting-started.html">Getting started</a><a class="dropdown-item fs-0" href="documentation/file-structure.html">File structure</a><a class="dropdown-item fs-0" href="documentation/customization.html">Customization</a><a class="dropdown-item fs-0" href="documentation/gulp.html">Gulp</a><a class="dropdown-item fs-0" href="documentation/RTL.html">RTL</a><a class="dropdown-item fs-0" href="documentation/plugins.html">Plugins</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link text-white dropdown-toggle" id="navbarDropdownComponents" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                <div class="dropdown-menu dropdown-menu-card" aria-labelledby="navbarDropdownComponents">
+                  <div class="card navbar-dropdown-col-4">
+                    <div class="card-body py-0">
+                      <div class="row">
+                        <div class="col-6 col-sm-auto">
+                          <div class="nav flex-column"><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/alerts.html">Alerts</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/background.html">Background</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/badges.html">Badges</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/breadcrumb.html">Breadcrumb</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/buttons.html">Buttons</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/cards.html">Cards</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/carousel.html">Carousel</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/collapse.html">Collapse</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/dropdowns.html">Dropdowns</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/fancyscroll.html">Fancyscroll</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/forms.html">Forms</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/hoverbox.html">Hoverbox</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/list-group.html">List group</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/modals.html">Modals</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/media-object.html">Media object</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/navs.html">Navs</a>
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-auto">
+                          <div class="nav flex-column"><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/navbar.html">Navbar</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/page-headers.html">Page headers</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/pagination.html">Pagination</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/popovers.html">Popovers</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/progress.html">Progress</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/scrollspy.html">Scrollspy</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/spinners.html">Spinners</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/tables.html">Tables</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/tabs.html">Tabs</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/tooltips.html">Tooltips</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/toasts.html">Toasts</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/php-AJAX-form.html">Php AJAX form</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="components/mailbluster.html">Mailbluster</a>
+                          </div>
+                          <div class="nav-link py-1 text-900 font-weight-bold fs-0">Plugins</div>
+                          <div class="nav flex-column"><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="plugins/accordion.html">Accordion</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="plugins/player.html">Player</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="plugins/google-map.html">Google map</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="plugins/typed-text.html">Typed text</a>
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-auto">
+                          <div class="nav-link py-1 text-900 font-weight-bold fs-0">Utilities</div><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/borders.html">Borders</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/clearfix.html">Clearfix</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/close-icon.html">Close icon</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/colors.html">Colors</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/display.html">Display</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/embed.html">Embed</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/flex.html">Flex</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/figures.html">Figures</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/grid.html">Grid</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/sizing.html">Sizing</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/stretched-link.html">Stretched link</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/spacing.html">Spacing</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/typography.html">Typography</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/vertical-align.html">Vertical align</a><a class="nav-link py-1 text-700 font-weight-medium fs-0" href="utilities/visibility.html">Visibility</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="ml-auto pb-4 pb-lg-0 mt-3 mt-lg-0"><a class="btn btn-dark text-decoration-none btn-hover-warning" href="#!" data-toggle="modal" data-target="#exampleModalCenter">Subscribe</a><a class="btn font-weight-bold btn-primary" href="/documentation/getting-started.html">Get started<span class="font-weight-normal d-lg-none d-xl-inline-block ml-1">- it's free</span></a></div>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color:#FDF7E3;">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body overflow-hidden py-0">
+              <div class="container-fluid">
+                <div class="row no-gutters">
+                  <div class="col-6"><a href="https://mailbluster.com/" target="_blank"><img class="mb-2" src="assets/img/logos/mailbluster.svg" alt="" width="140" /></a>
+                    <h4>Discover the world’s top Designers & Creatives</h4>
+                  </div>
+                  <div class="col-6"><img class="img-fluid" src="assets/img/gallery/feature-left.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer bg-white d-block px-0 py-4">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <form class="mailbluster-subscribe ml-2">
+                    <input type="hidden" value="Thank you so much for subscribing!" />
+                    <div class="mailbluster-feedback"></div>
+                    <div class="input-group">
+                      <input class="form-control" type="email" name="email" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="mailbaluster-submit" />
+                      <div class="input-group-append">
+                        <button class="btn btn-info btn-block" id="mailbaluster-submit" type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <p class="mb-0 mt-3 text-500 text-center">Your email is safe with us. We won't spam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="pt-5 pb-0">
+        <div class="container py-lg-11 py-7">
+          <div class="bg-holder" style="background-image:url(assets/img/gallery/about-banner.jpg);">
+          </div>
+          <!--/.bg-holder-->
+
+        </div>
+      </section>
+      <section id="content-4">
+        <div class="container px-md-0">
+          <div class="row align-items-center">
+            <div class="col-lg-10">
+              <h1 class="mb-4">Vision</h1>
+              <p class="fs-lg-4 fs-md-3 fs-2">We envision a world where everyone can create powerful, flexible websites and apps as easily as they create documents today. Because the only thing better than the internet is an internet we can all create for.</p>
+              <p class="fs-lg-4 fs-md-3 fs-2">So, we brought back the control of editing website template through HTML code. You don't need to edit CSS or Javascript file to make changes. Also no need to know the coding language. Those who don't know HTML can use Spin intuitively. That's how Spin was built.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-0">
+        <div class="container bg-dark py-6">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="row">
+                <div class="col-6 text-center border-right border-white-25"><img class="mb-2" src="assets/img/icons/happy-1.png" alt="" width="50"><br><span class="fs-4 font-weight-medium text-white" data-countup='{"count":36487}'>0</span>
+                  <p class="fs-1 text-white">Clients</p>
+                </div>
+                <div class="col-6 text-center border-lg-right border-white-25"><img class="mb-2" src="assets/img/icons/shop.png" alt="" width="50"><br><span class="fs-4 font-weight-medium text-white" data-countup="{&quot;count&quot;:512}">0</span><span class="fs-4 font-weight-medium text-white">$M</span>
+                  <p class="fs-1 text-white">In total funding</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 my-4 d-lg-none">
+              <div class="row justify-content-around">
+                <div class="col-5 col-lg-4 border-top border-white-25"></div>
+                <div class="col-5 col-lg-4 border-top border-white-25"></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-6 text-center border-right border-white-25"><img class="mb-2" src="assets/img/icons/pie-chart.png" alt="" width="50"><br><span class="fs-4 font-weight-medium text-white" data-countup="{&quot;count&quot;:25}">0</span>
+                  <p class="fs-1 text-white">Years of Exprience</p>
+                </div>
+                <div class="col-6 text-center"><img class="mb-2" src="assets/img/icons/like.png" alt="" width="50"><br><span class="fs-4 font-weight-medium text-white" data-countup="{&quot;count&quot;:130}">0</span>
+                  <p class="fs-1 text-white">Qualified Staffs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-0">
+        <div class="container px-md-0">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h3>What people say about Spin</h3>
+              <p class="lead">Celebrating over 6 million happy customers and counting.<br class="d-none d-lg-block">Spin works perfectly for them all.</p>
+            </div>
+            <div class="col-lg-6 h-100">
+              <div class="border p-3 p-md-5">
+                <div class="media"><img src="assets/img/team/about-avatar-img-1.jpg" alt="profile" style="width: 65px;">
+                  <div class="media-body pl-3">
+                    <p class="lead">The support team is really cool. They solved my problem like in-house developer. Thanks for this awesome template.</p>
+                    <h5 class="fs-0 mb-1">Liam Neeson</h5>
+                    <p class="fs--1 mb-0">CEO, Blue Web Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0 h-100">
+              <div class="border p-3 p-md-5">
+                <div class="media"><img src="assets/img/team/about-avatar-img-2.jpg" alt="profile" style="width: 65px;">
+                  <div class="media-body pl-3">
+                    <p class="lead">First, I thought what I can do in web design beside building with WordPress. But Spin crossed my all expectation. Thank you.</p>
+                    <h5 class="fs-0 mb-1">Jesse Kirk</h5>
+                    <p class="fs--1 mb-0">Independent freelancer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 h-100">
+              <div class="border p-3 p-md-5">
+                <div class="media"><img src="assets/img/team/about-avatar-img-3.jpg" alt="profile" style="width: 65px;">
+                  <div class="media-body pl-3">
+                    <p class="lead">I like how easy it is to use a layout and making changes. All you need is your common sense to edit any element.</p>
+                    <h5 class="fs-0 mb-1">Pierce Brosnan</h5>
+                    <p class="fs--1 mb-0">Upwork Contractor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 h-100">
+              <div class="border p-3 p-md-5">
+                <div class="media"><img src="assets/img/team/about-avatar-img-4.jpg" alt="profile" style="width: 65px;">
+                  <div class="media-body pl-3">
+                    <p class="lead">From now on, we are going to use this template for all of our future front end projects.We can Developed websites.</p>
+                    <h5 class="fs-0 mb-1">Nathan Paul</h5>
+                    <p class="fs--1 mb-0">Project Manager, Webgeekz</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-0">
+        <div class="container px-md-0">
+          <div class="row justify-content-center text-center mb-3">
+            <div class="col-lg-6">
+              <h2 class="mb-3">Meet the Team</h2>
+              <p class="lead">We’re a passionate, dedicated group of experienced designers, developers and programmers motivated to continually reach the futuristic goals.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-1.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Devid Creighton</h5>
+                  <p>Chairman</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-2.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Allison Gardner</h5>
+                  <p>UI Designer</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-3.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Xavier Oswald</h5>
+                  <p>Managing Director</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-facebook" href="#!"><span class="fab fa-facebook"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-4.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Allison Gardner</h5>
+                  <p>UI Designer</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-5.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Avery Keat</h5>
+                  <p>Creative Writer</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-6.jpeg" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Xavier Oswald</h5>
+                  <p>Managing Director</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-facebook" href="#!"><span class="fab fa-facebook"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-7.png" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Nicolas Fisher</h5>
+                  <p>Product Manager</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <div class="row align-items-center">
+                <div class="col-auto"><img class="img-fluid" src="assets/img/team/t-8.jpeg" alt="Member"></div>
+                <div class="col mt-3">
+                  <h5 class="fs-1 mt-0 mb-1">Devid Creighton</h5>
+                  <p>Chairman</p>
+                  <div class="row mt-2">
+                    <div class="col"><a class="text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="text-google-plus px-3" href="#!"><span class="fab fa-google"></span></a><a class="text-linkedin" href="#!"><span class="fab fa-linkedin"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center py-0">
+
+        <div class="container">
+          <div class="mx-n3 bg-black px-3 py-6">
+            <div class="row justify-content-center">
+              <div class="col-lg-7">
+                <p class="mb-3 text-white font-weight-semi-bold">Get Spin</p>
+                <h3 class="fs-2 fs-sm-3 text-white">Crafted layouts, enhanced user experience and top notch supports for creative directors &amp; makers.</h3><a class="btn btn-primary btn-sm mt-4" href="#!" target="_blank">Purchase for &dollar;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0">
+
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col d-flex flex-between-center border-bottom">
+              <h1 class="mb-3 font-weight-semi-bold fs-3 fs-lg-5">What's Spin?</h1><a href="#!">
+                <h5 class="font-weight-semi-bold fs-0 fs-lg-1">Try it for free</h5>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-around border-bottom pb-7">
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/paint-tool_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">Designer</h3>
+              </a>
+              <p>The power of CSS, HTML, and JavaScript in a visual canvas.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/bolt-alt_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">Interactions</h3>
+              </a>
+              <p>Build website interactions and animations visually.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/layer-group_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">CMS</h3>
+              </a>
+              <p>Define your own content structure, and design with real data.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/shopping-trolley_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">Ecommerce</h3>
+              </a>
+              <p>Goodbye templates and code — design your store visually.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/edit-alt_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">Editor</h3>
+              </a>
+              <p>Edit and update site content right on the page.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5"><img class="mb-3" src="assets/img/icons/cloud-data-connection_grad.svg" alt="" width="40" /><a class="stretched-link text-decoration-none title-hover" href="#!">
+                <h3 class="title mb-0">Hosting</h3>
+              </a>
+              <p>Set up lightning-fast managed hosting in just a few clicks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-6 pl-sm-0">
+              <p class="font-weight-bold">Product</p>
+              <ul class="list-unstyled">
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Product Overview</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Tools & Integrations</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Documentation</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Editor</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Release Notes</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <p class="font-weight-bold">Company</p>
+              <ul class="list-unstyled">
+                <li class="nav-item mt-2"><a class="text-600" href="#!">About</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Blog</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Leadership</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Marketplace</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Careers<span class="badge badge-pill badge-soft-primary text-monospace ml-2">We're hiring!</span></a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 mt-4 mt-lg-0 pl-sm-0 pl-lg-3">
+              <p class="font-weight-bold">Contact & Support</p>
+              <ul class="list-unstyled">
+                <li class="nav-item mt-2"><a class="text-600" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Support</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Sales</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Report Abuse</a></li>
+                <li class="nav-item mt-2"><a class="text-600" href="#!">Forum</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 mt-4 mt-lg-0">
+              <p class="font-weight-bold">Social</p>
+              <ul class="list-unstyled">
+                <li class="nav-item mt-3"><a class="text-facebook pl-1" href="#!"><span class="fab fa-facebook" data-fa-transform="grow-8"></span></a></li>
+                <li class="nav-item mt-3"><a class="text-twitter pl-1" href="#!"><span class="fab fa-twitter" data-fa-transform="grow-8"></span></a></li>
+                <li class="nav-item mt-3"><a class="text-google-plus pl-1" href="#!"><span class="fab fa-google-plus-g" data-fa-transform="grow-8"></span></a></li>
+                <li class="nav-item mt-3"><a class="text-youtube pl-1" href="#!"><span class="fab fa-youtube" data-fa-transform="grow-8"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <footer>
+        <div class="container">
+          <div class="row border-top">
+            <div class="col px-sm-0 py-4">
+              <p class="mb-0">&copy; 2019 <a class="text-body font-weight-bold" href="https://themewagon.com/" target="_blank">Themewagon</a>, Inc. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/lib/is/is.min.js"></script>
+    <script src="assets/lib/stickyfilljs/stickyfill.min.js"></script>
+    <script src="assets/lib/sticky-kit/sticky-kit.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+  </body>
+
+</html>
