@@ -1,33 +1,8 @@
-function Footer(props: { pages: string[]; footerText: string }) {
+import { PAGES } from "../../pages";
+
+function Footer() {
   return (
     <div>
-      <section className="py-0 bg-dark">
-        <div
-          className="bg-holder"
-          style={{
-            backgroundImage: "url(assets/img/bg-img/CTA.png)",
-          }}
-        />
-        <div
-          className="bg-holder"
-          style={{
-            backgroundImage: "url(assets/img/bg-img/CTA.png)",
-          }}
-        />
-        {/*/.bg-holder*/}
-        <div className="container">
-          <div className="row">
-            <div className="col text-center py-5">
-              <h3 className="text-white fs-lg-3 fs-2">
-                <span className="position-relative">{props.footerText}</span>
-              </h3>
-              <button className="btn mt-3 btn-danger">start now</button>
-            </div>
-          </div>
-        </div>
-        {/* end of .container*/}
-      </section>
-
       <section className="bg-dark overflow-hidden">
         <div className="container">
           <div
@@ -39,7 +14,7 @@ function Footer(props: { pages: string[]; footerText: string }) {
             <div className="col-lg-3 col-sm-6 mb-4 mb-md-0">
               <h4 className="text-white">Navigate</h4>
               <div className="nav flex-column mt-3">
-                {props.pages.map((page) => (
+                {PAGES.map((page) => (
                   <a
                     className="nav-item nav-link px-2 pl-0 text-800"
                     href={"/" + page.toLowerCase()}

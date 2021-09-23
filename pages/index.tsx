@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="main" id="top">
         <Navbar />
-        <section className="bg-dark   py-xxl-11 py-xl-8 py-lg-6 py-0 ">
+        <section className="bg-dark py-xxl-11 py-xl-8 py-lg-6 py-0 ">
           <div
             className="bg-holder"
             style={{
@@ -1462,11 +1462,35 @@ const Home: NextPage = () => {
         </section>
         {/* <section> close ============================*/}
       </main>
-      {/* TODO: pass an string[] with the pages names   */}
-      <Footer
-        pages={["crypto", "about", "contact"]}
-        footerText="Start building beautiful apps"
-      />
+      <section className="py-0 bg-dark">
+        <div
+          className="bg-holder"
+          style={{
+            backgroundImage: "url(assets/img/bg-img/CTA.png)",
+          }}
+        />
+        <div
+          className="bg-holder"
+          style={{
+            backgroundImage: "url(assets/img/bg-img/CTA.png)",
+          }}
+        />
+        {/*/.bg-holder*/}
+        <div className="container">
+          <div className="row">
+            <div className="col text-center py-5">
+              <h3 className="text-white fs-lg-3 fs-2">
+                <span className="position-relative">
+                  Start building beautiful apps
+                </span>
+              </h3>
+              <button className="btn mt-3 btn-danger">start now</button>
+            </div>
+          </div>
+        </div>
+        {/* end of .container*/}
+      </section>
+      <Footer />
     </div>
   );
 };

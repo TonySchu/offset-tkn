@@ -978,26 +978,35 @@ const Crypto: NextPage = () => {
         </div>
         {/* end of .container*/}
       </section>
-      {/* <section> close ============================*/}
-      {/* ============================================*/}
-      {/* ============================================*/}
-      {/* <section> begin ============================*/}
-
-      {/* <section> close ============================*/}
-      {/* ============================================*/}
-      {/* ============================================*/}
-      {/* <section> begin ============================*/}
-      {/* <section> close ============================*/}
-      {/* ============================================*/}
-      {/* ============================================*/}
-      {/* <section> begin ============================*/}
-
-      {/* <section> close ============================*/}
-      {/* ============================================*/}
-      <Footer
-        pages={["crypto", "about", "contact"]}
-        footerText="Choose, Connect &amp; Trade"
-      />
+      <section className="py-0 bg-dark">
+        <div
+          className="bg-holder"
+          style={{
+            backgroundImage: "url(assets/img/bg-img/CTA.png)",
+          }}
+        />
+        <div
+          className="bg-holder"
+          style={{
+            backgroundImage: "url(assets/img/bg-img/CTA.png)",
+          }}
+        />
+        {/*/.bg-holder*/}
+        <div className="container">
+          <div className="row">
+            <div className="col text-center py-5">
+              <h3 className="text-white fs-lg-3 fs-2">
+                <span className="position-relative">
+                  Choose, Connect &amp; Trade
+                </span>
+              </h3>
+              <button className="btn mt-3 btn-light">purchase now</button>
+            </div>
+          </div>
+        </div>
+        {/* end of .container*/}
+      </section>
+      <Footer />
     </main>
   );
 };
