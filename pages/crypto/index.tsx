@@ -991,70 +991,13 @@ const Crypto: NextPage = () => {
       {/* ============================================*/}
       {/* ============================================*/}
       {/* <section> begin ============================*/}
-      <section className="bg-dark py-2">
-        <div className="container">
-          <div className="row text-center justify-content-center">
-            <div className="col-auto">
-              <div className="nav justify-content-center">
-                <a
-                  className="
-                                    nav-item nav-link
-                                    px-2
-                                    social-icon-hover-primary
-                                "
-                  href="#!"
-                >
-                  <span className="fab fa-twitter social-icon" />
-                </a>
-                <a
-                  className="
-                                    nav-item nav-link
-                                    px-2
-                                    social-icon-hover-primary
-                                "
-                  href="#!"
-                >
-                  <span className="fab fa-facebook-f social-icon" />
-                </a>
-                <a
-                  className="
-                                    nav-item nav-link
-                                    px-2
-                                    social-icon-hover-danger
-                                "
-                  href="#!"
-                >
-                  <span className="fab fa-youtube social-icon" />
-                </a>
-                <a
-                  className="
-                                    nav-item nav-link
-                                    px-2
-                                    social-icon-hover-warning
-                                "
-                  href="#!"
-                >
-                  <span className="fab fa-instagram social-icon" />
-                </a>
-                <a
-                  className="
-                                    nav-item nav-link
-                                    px-2
-                                    social-icon-hover-info
-                                "
-                  href="#!"
-                >
-                  <span className="fab fa-linkedin-in social-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* end of .container*/}
-      </section>
+
       {/* <section> close ============================*/}
       {/* ============================================*/}
-      <Footer />
+      <Footer
+        pages={["crypto", "about", "contact"]}
+        footerText="Choose, Connect &amp; Trade"
+      />
     </main>
   );
 };

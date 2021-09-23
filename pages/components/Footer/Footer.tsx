@@ -1,7 +1,13 @@
-function Footer() {
+function Footer(props: { pages: string[]; footerText: string }) {
   return (
     <div>
       <section className="py-0 bg-dark">
+        <div
+          className="bg-holder"
+          style={{
+            backgroundImage: "url(assets/img/bg-img/CTA.png)",
+          }}
+        />
         <div
           className="bg-holder"
           style={{
@@ -13,9 +19,7 @@ function Footer() {
           <div className="row">
             <div className="col text-center py-5">
               <h3 className="text-white fs-lg-3 fs-2">
-                <span className="position-relative">
-                  Choose, Connect &amp; Trade
-                </span>
+                <span className="position-relative">{props.footerText}</span>
               </h3>
               <button className="btn mt-3 btn-danger">start now</button>
             </div>
@@ -35,21 +39,16 @@ function Footer() {
             <div className="col-lg-3 col-sm-6 mb-4 mb-md-0">
               <h4 className="text-white">Navigate</h4>
               <div className="nav flex-column mt-3">
-                <a className="nav-item nav-link px-2 pl-0 text-800" href="#!">
-                  Demos
-                </a>
-                <a className="nav-item nav-link px-2 pl-0 text-800" href="#!">
-                  Pages
-                </a>
-                <a className="nav-item nav-link px-2 pl-0 text-800" href="#!">
-                  Blog
-                </a>
-                <a className="nav-item nav-link px-2 pl-0 text-800" href="#!">
-                  Portfolio
-                </a>
-                <a className="nav-item nav-link px-2 pl-0 text-800" href="#!">
-                  Elements
-                </a>
+                {props.pages.map((page) => (
+                  <a
+                    className="nav-item nav-link px-2 pl-0 text-800"
+                    href={"/" + page.toLowerCase()}
+                  >
+                    {page
+                      .toLowerCase()
+                      .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())}
+                  </a>
+                ))}
               </div>
             </div>
             <div className="col-lg-3 col-sm-6 mr-auto">
