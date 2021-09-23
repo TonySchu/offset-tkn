@@ -24,7 +24,7 @@ const Contact: NextPage = () => {
         {/*/.bg-holder*/}
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-7 col-10 pt-8 pb-9">
+            <div className="col-lg-6 col-md-7 col-10 pt-10 pb-9">
               <h1 className="font-weight-medium text-white fs-xl-5 fs-sm-4 fs-3">
                 <span className="position-relative">
                   Get in touch with us
