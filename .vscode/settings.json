@@ -1,24 +1,23 @@
 {
-    
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#6e1bce",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "activityBar.activeBackground": "#6e1bce",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#6e1bce",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground":"#6e1bce",
-  },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#6e1bce",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "activityBar.activeBackground": "#6e1bce",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#6e1bce",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#6e1bce"
+    },
     "editor.formatOnSave": true,
     "[typescript]": {
-      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
     }
 }
