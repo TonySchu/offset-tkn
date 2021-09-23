@@ -1,19 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Page } from "../../../types/Page";
 
-function PageRoute(props: any) {
+function PageRoute(props: Page) {
   return (
-    // <ul className="navbar-nav ml-auto">
-    <a
-      className="nav-link nav-item"
-      id="pagesNavbarDropdown"
-      href={"/" + props.pageName.toLowerCase()}
-      role="button"
-      data-toggle="dropdown"
-      aria-haspopup="true"
-      aria-expanded="false"
+    <div
+      className=" collapse navbar-collapse navbar-nav ml-auto"
+      id="navbarStandard"
     >
-      {props.pageName.toUpperCase()}
-    </a>
+      <a
+        className="nav-link nav-item"
+        href={"/" + props.name.toLowerCase()}
+        role="button"
+      >
+        {props.name
+          .toLowerCase()
+          .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())}
+      </a>
+    </div>
   );
 }
 
