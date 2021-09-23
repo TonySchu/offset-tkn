@@ -1,0 +1,65 @@
+{
+    
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#17abf3",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBarBadge.background": "#ad6213",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "activityBar.activeBackground": "#17abf3",
+      "activityBar.activeBorder": "#ad6213",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "statusBar.background": "#17abf3",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground":"#17abf3",
+      "titleBar.activeBackground": "#17abf3",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#17abf3",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#17abf3",
+    "editor.formatOnSave": true,
+    "[typescript]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    },
+    "workbench.colorCustomizations____LILSA": {
+      "activityBar.background": "#4f0f8b",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBarBadge.background": "#ad6213",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "activityBar.activeBackground": "#4f0f8b",
+      "activityBar.activeBorder": "#ad6213",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "statusBar.background": "#350a5d",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#4f0f8b",
+      "titleBar.activeBackground": "#350a5d",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#350a5d99",
+      "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "workbench.colorCustomizations__grün": {
+    "activityBar.background": "#0e5948",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "activityBar.activeBackground": "#0e5948",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#0e5948",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground":"#0e5948",
+    "titleBar.activeBackground": "#0e5948",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#0e5948",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color____LISA": "#350a5d"
+}
+
+
+
