@@ -1,15 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { NextPage } from "next";
 import Image from "next/image";
 import React from "react";
-import Companies, {
-  companiesBannerStyle,
-} from "./components/Companies/Companies";
 import DefaultTemplate, { SEO } from "./components/DefaultTemplate";
+import Profile from "./components/Team/Profile";
 
 const Home: NextPage = () => {
   return (
     <DefaultTemplate SEO={{ ...SEO }}>
-      <section className="bg-dark py-xxl-11 py-xl-8 py-lg-6 py-0">
+      <section className="bg-dark py-xxl-11 py-xl-8 py-lg-6 py-0 ">
         <div
           className="bg-holder"
           style={{
@@ -77,10 +76,46 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <Companies
-              title="Trusted By Companies Like This"
-              page={companiesBannerStyle.home}
-            />
+            <div className="col-xxl-10 col-xl-9 col-lg-8 col-10 mb-md-4 mb-lg-0 text-center">
+              <h6 className="mb-xxl-6 mb-xl-5 mb-lg-4 mb-md-4 text-800 font-weight-bold fs-md-0 fs--1 position-relative z-index-1">
+                trusted by companies like this
+              </h6>
+              <div
+                className="owl-carousel owl-carousel-theme owl-theme owl-dot-round owl-theme-primary mb-3"
+                data-options='{"autoplay":true,"loop":true,"dotsEach":true,"margin":50,"autoplayHoverPause":true,"responsive":{"0":{"items":3,"dotsEach":false,"dots":false,"margin":30},"600":{"items":4,"dotsEach":false,"dots":false},"1000":{"items":5,"dotsEach":true}}}'
+              >
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/microsoft-logo.png"
+                  width={191}
+                />
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/airbnb-logo.png"
+                  width={156}
+                />
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/google-logo.png"
+                  width={162}
+                />
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/Spotify_Logo.png"
+                  width={191}
+                />
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/Paypal-logo.png"
+                  width={162}
+                />
+                <img
+                  className="img-fluid"
+                  src="assets/img/logos/microsoft-logo.png"
+                  width={191}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -209,8 +244,14 @@ const Home: NextPage = () => {
               <div className="row mt-6">
                 <div className="col-md-5">
                   <span className="fa-stack">
-                    <span className="fas fa-circle fa-stack-2x text-white" />
-                    <span className="fas fa-brain text-primary fa-stack-1x fa-inverse" />
+                    <FontAwesomeIcon
+                      icon={["fas", "circle"]}
+                      className="fa-stack-2x text-white"
+                    />
+                    <FontAwesomeIcon
+                      icon={["fas", "brain"]}
+                      className="text-primary fa-stack-1x fa-inverse"
+                    />
                   </span>
                   <h5 className="font-weight-bold text-white mt-2">
                     Smart Features
@@ -221,8 +262,14 @@ const Home: NextPage = () => {
                 </div>
                 <div className="col-xl-5 col-lg-6 col-md-5 mt-3 mt-md-0">
                   <span className="fa-stack">
-                    <span className="fas fa-circle fa-stack-2x text-white" />
-                    <span className="fas fa-cannabis text-danger fa-stack-1x fa-inverse" />
+                    <FontAwesomeIcon
+                      icon={["fas", "circle"]}
+                      className="fa-stack-2x text-white"
+                    />
+                    <FontAwesomeIcon
+                      icon={["fas", "cannabis"]}
+                      className="text-danger fa-stack-1x fa-inverse"
+                    />
                   </span>
                   <h5 className="font-weight-bold text-white mt-2">
                     Dynamic structure
@@ -404,344 +451,85 @@ const Home: NextPage = () => {
                 className="slick-carousel slick-theme-primary slick-vertical-dots"
                 data-slick='{"vertical":true,"verticalSwiping":true,"arrows":false,"autoplay":true,"autoplaySpeed":1000,"slidesToScroll":1,"mobileFirst":true,"slidesToShow":2,"responsive":[{"breakpoint":1024,"settings":{"dots":true}},{"breakpoint":600,"settings":{"dots":true}},{"breakpoint":300,"settings":{"dots":true,"verticalSwiping":false,"vertical":false,"slidesToShow":1}}]}'
               >
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-boy-1"
-                      src="/assets/img/team/adult-boy-1.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">
-                      Lionel d’ costa
-                    </h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      Founder &amp; CEO
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      A design platform should unite code, content, and design,
-                      helping people in each discipline collaborate. And That is
-                      Shape for you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-girl-1"
-                      src="/assets/img/team/adult-girl-1.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">Mila dalush</h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      business developement manager
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      Web publishing platforms should empower you to build
-                      whatever you like. Here at Shape we we work on that for
-                      you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-boy-2"
-                      src="/assets/img/team/adult-boy-2.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">Mila dalush</h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      HR manager
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      Web publishing platforms should empower you to build
-                      whatever you like. Here at Shape we we work on that for
-                      you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-girl-2"
-                      src="/assets/img/team/adult-girl-2.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">Mila dalush</h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      Marketing manager
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      Web publishing platforms should empower you to build
-                      whatever you like. Here at Shape we we work on that for
-                      you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-boy-3"
-                      src="/assets/img/team/adult-boy-3.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">Mila dalush</h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      front-end developer
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      Web publishing platforms should empower you to build
-                      whatever you like. Here at Shape we we work on that for
-                      you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row d-flex flex-center my-4">
-                  <div className="col-xxl-4 col-xl-5 col-md-4 col-sm-6 col-7 mb-4 mb-xl-0">
-                    <Image
-                      alt="adult-girl-3"
-                      src="/assets/img/team/adult-girl-3.png"
-                      height="207.5"
-                      width="207.5"
-                      className="rounded-circle"
-                    ></Image>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-7 col-10 text-center text-md-left">
-                    <h4 className="font-weight-bold text-700">Mila dalush</h4>
-                    <h6 className="text-500 font-weight-bold fs-0">
-                      Marketing manager
-                    </h6>
-                    <p
-                      className="font-weight-bold display-4 mb-0 text-200 line-height-0 pt-3 pb-1"
-                      style={{ textIndent: "-5px" }}
-                    >
-                      <em>"</em>
-                    </p>
-                    <p className="text-900">
-                      Web publishing platforms should empower you to build
-                      whatever you like. Here at Shape we we work on that for
-                      you.
-                    </p>
-                    <div className="row justify-content-center justify-content-md-start">
-                      <div className="col-auto">
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-twitter social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-facebook-f social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block py-2 pr-4 social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-instagram social-icon" />
-                        </a>
-                        <a
-                          className="text-decoration-none d-inline-block social-icon-hover-primary"
-                          href="#!"
-                        >
-                          <span className="fab fa-linkedin-in social-icon" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Profile
+                  name="Lionel d’ costa"
+                  roles="Founder &amp; CEO"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-boy-1"
+                  src="/assets/img/team/adult-boy-1.png"
+                >
+                  A design platform should unite code, content, and design,
+                  helping people in each discipline collaborate. And That is
+                  Shape for you.
+                </Profile>
+                <Profile
+                  name="Mila dalush"
+                  roles="business developement manager"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-girl-1"
+                  src="/assets/img/team/adult-girl-1.png"
+                >
+                  Web publishing platforms should empower you to build whatever
+                  you like. Here at Shape we we work on that for you.
+                </Profile>
+                <Profile
+                  name="Mila dalush"
+                  roles="business developement manager"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-boy-2"
+                  src="/assets/img/team/adult-boy-2.png"
+                >
+                  Web publishing platforms should empower you to build whatever
+                  you like. Here at Shape we we work on that for you.
+                </Profile>
+                <Profile
+                  name="Mila dalush"
+                  roles="business developement manager"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-girl-1"
+                  src="/assets/img/team/adult-girl-2.png"
+                >
+                  Web publishing platforms should empower you to build whatever
+                  you like. Here at Shape we we work on that for you.
+                </Profile>
+                <Profile
+                  name="Mila dalush"
+                  roles="business developement manager"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-boy-3"
+                  src="/assets/img/team/adult-boy-3.png"
+                >
+                  Web publishing platforms should empower you to build whatever
+                  you like. Here at Shape we we work on that for you.
+                </Profile>
+                <Profile
+                  name="Mila dalush"
+                  roles="business developement manager"
+                  twitterLink="#"
+                  facebookLink="#"
+                  instagramLink="#"
+                  linkedinLink="#"
+                  alt="adult-girl-3"
+                  src="/assets/img/team/adult-girl-3.png"
+                >
+                  Web publishing platforms should empower you to build whatever
+                  you like. Here at Shape we we work on that for you.
+                </Profile>
               </div>
             </div>
           </div>
@@ -835,9 +623,12 @@ const Home: NextPage = () => {
                     <div className="card-body py-2">
                       <div className="row flex-center">
                         <div className="col-auto">
-                          <span
-                            className="fab fa-apple text-white"
-                            data-fa-transform="grow-20"
+                          <FontAwesomeIcon
+                            icon={["fab", "apple"]}
+                            className="text-white"
+                            style={{
+                              height: "38px",
+                            }}
                           />
                         </div>
                         <div className="col-auto position-static">
@@ -860,9 +651,13 @@ const Home: NextPage = () => {
                     <div className="card-body py-2">
                       <div className="row flex-center">
                         <div className="col-auto">
-                          <span
-                            className="fab fa-google-play text-white"
-                            data-fa-transform="grow-16"
+                          <FontAwesomeIcon
+                            icon={["fab", "google-play"]}
+                            className="text-white"
+                            style={{
+                              width: "30px",
+                              height: "38px",
+                            }}
                           />
                         </div>
                         <div className="col-auto">
