@@ -1,4 +1,5 @@
 import React from "react";
+import { COMPANIES } from "../../companies";
 
 export const companiesBannerStyle = {
   home: "col-xxl-10 col-xl-9 col-lg-8 col-10 mb-md-4 mb-lg-0 text-center",
@@ -13,51 +14,18 @@ function Companies(props: { title: string; page: string }) {
         <div className="col-10">
           <div
             className="
-                                    owl-carousel
-                                    owl-carousel-theme
-                                    owl-theme
-                                    owl-dot-round
-                                    owl-theme-danger
+                                    
                                     mt-lg-5 mt-3
                                 "
-            data-options='{"autoplay":true,"loop":true,"dotsEach":true,"margin":50,"autoplayHoverPause":true,"responsive":{"0":{"items":3,"dotsEach":false,"dots":true},"600":{"items":4,"dotsEach":true},"1000":{"items":5,"dotsEach":true}}}'
           >
-            <img
-              className="img-fluid"
-              src="assets/img/logos/microsoft-logo.png"
-              alt="microsoft-logo"
-              width={191}
-            />
-            <img
-              className="img-fluid"
-              src="assets/img/logos/airbnb-logo.png"
-              alt="microsoft-logo"
-              width={156}
-            />
-            <img
-              className="img-fluid"
-              src="assets/img/logos/Paypal-logo.png"
-              alt="microsoft-logo"
-              width={162}
-            />
-            <img
-              className="img-fluid"
-              src="assets/img/logos/microsoft-logo.png"
-              alt="microsoft-logo"
-              width={191}
-            />
-            <img
-              className="img-fluid"
-              src="assets/img/logos/Paypal-logo.png"
-              alt="microsoft-logo"
-              width={162}
-            />
-            <img
-              className="img-fluid"
-              src="assets/img/logos/microsoft-logo.png"
-              alt="microsoft-logo"
-              width={191}
-            />
+            {COMPANIES.map((companie) => (
+              <img
+                className="img-fluid ml-3"
+                src={companie}
+                alt="microsoft-logo"
+                width={156}
+              />
+            ))}
           </div>
         </div>
       </div>
