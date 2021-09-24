@@ -1,4 +1,7 @@
 import type { NextPage } from "next";
+import Companies, {
+  companiesBannerStyle,
+} from "../components/Companies/Companies";
 import DefaultTemplate, { SEO } from "../components/DefaultTemplate";
 
 const Crypto: NextPage = () => {
@@ -147,61 +150,10 @@ const Crypto: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="mt-md-9 mt-6 pb-lg-8 pb-md-5 pb-6 text-center">
-            <h5 className="text-500 font-weight-bold">Our Partners</h5>
-            <div className="row justify-content-center">
-              <div className="col-10">
-                <div
-                  className="
-                                    owl-carousel
-                                    owl-carousel-theme
-                                    owl-theme
-                                    owl-dot-round
-                                    owl-theme-danger
-                                    mt-lg-5 mt-3
-                                "
-                  data-options='{"autoplay":true,"loop":true,"dotsEach":true,"margin":50,"autoplayHoverPause":true,"responsive":{"0":{"items":3,"dotsEach":false,"dots":true},"600":{"items":4,"dotsEach":true},"1000":{"items":5,"dotsEach":true}}}'
-                >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/microsoft-logo.png"
-                    alt="microsoft-logo"
-                    width={191}
-                  />
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/airbnb-logo.png"
-                    alt="microsoft-logo"
-                    width={156}
-                  />
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/Paypal-logo.png"
-                    alt="microsoft-logo"
-                    width={162}
-                  />
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/microsoft-logo.png"
-                    alt="microsoft-logo"
-                    width={191}
-                  />
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/Paypal-logo.png"
-                    alt="microsoft-logo"
-                    width={162}
-                  />
-                  <img
-                    className="img-fluid"
-                    src="assets/img/logos/microsoft-logo.png"
-                    alt="microsoft-logo"
-                    width={191}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Companies
+            title="Trusted By Companies Like This"
+            page={companiesBannerStyle.crypto}
+          />
         </div>
       </section>
       <img
