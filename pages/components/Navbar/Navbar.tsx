@@ -13,7 +13,7 @@ function Navbar() {
     }
   }
   return (
-    <nav className="navbar navbar-dark  navbar-border-bottom navbar-theme  fixed-top navbar-expand-lg py-3 sticky-kit bg-dark">
+    <nav className="navbar bg-dark navbar-dark navbar-expand-lg py-3 sticky-kit ">
       <div className="container">
         <a className="navbar-brand" href="/">
           <img src="assets/img/logos/Normal.png" alt="logo" width={100} />
