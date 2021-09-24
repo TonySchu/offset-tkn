@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import DefaultTemplate, { SEO } from "../components/DefaultTemplate";
+import Map from "../components/Map/Map";
 
 const Contact: NextPage = () => {
   return (
@@ -135,24 +136,7 @@ const Contact: NextPage = () => {
               <h4 className="text-white mb-5" id="map">
                 Find Us On the map!
               </h4>
-              <div
-                className="googlemap rounded-soft shadow-sm"
-                data-latlng="48.8583701,2.2922873,17"
-                data-scrollwheel="false"
-                data-icon="assets/img/icons/map-marker.png"
-                data-zoom={15}
-                data-theme="UltraLight"
-                style={{ minHeight: 450 }}
-              >
-                <div className="marker-content">
-                  <h5 className="mb-2">Eiffel Tower</h5>
-                  <p className="mb-0">
-                    Gustave Eiffel's iconic, wrought-iron 1889 tower,
-                    <br />
-                    with steps and elevators to observation decks.
-                  </p>
-                </div>
-              </div>
+              <Map />
             </div>
           </div>
           <div className="row justify-content-center">
