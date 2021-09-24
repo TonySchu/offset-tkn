@@ -1,8 +1,12 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import React from "react";
 import { SearchEngineOptimization } from "../types/SEO";
 import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
+library.add(fas, fab);
 
 export const SEO: SearchEngineOptimization = {
     title: "Shape",

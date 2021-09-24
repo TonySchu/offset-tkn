@@ -44,21 +44,6 @@ const Contact: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="down-arrow">
-                    <a
-                        href="#map"
-                        data-fancyscroll="data-fancyscroll"
-                        data-offset={96}
-                    >
-                        <span className="fa-stack fa-1x">
-                            <span
-                                className="fas fa-circle fa-stack-2x text-white"
-                                data-fa-transform="grow-4"
-                            />
-                            <span className="fas fa-angle-down fa-stack-1x fa-inverse text-800" />
-                        </span>
-                    </a>
-                </div>
             </section>
             {/* ============================================*/}
             {/* <section> begin ============================*/}

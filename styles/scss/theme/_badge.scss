@@ -2,28 +2,86 @@
 |   Badge
 -----------------------------------------------*/
 @mixin badge-soft-variant($bg, $color) {
-  color: $color;
-  background-color: $bg;
+    color: $color;
+    background-color: $bg;
 
-  &[href] {
-    @include hover-focus {
-      text-decoration: none;
-      color: $color;
-      background-color: darken($bg, 10%);
+    &[href] {
+        @include hover-focus {
+            text-decoration: none;
+            color: $color;
+            background-color: darken($bg, 10%);
+        }
     }
-  }
 }
 
 @each $color, $value in $theme-colors {
-  .badge-soft-#{$color} {
-    @if $color == 'secondary' {
-      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, -0.8));
-    } @else if $color == 'warning' {
-      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 2.5));
-    } @else if $color == 'danger' {
-      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 4.5));
-    } @else {
-      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 4.5));
+    .badge-soft-#{$color} {
+        @if $color == "secondary" {
+            @include badge-soft-variant(
+                theme-color-level($color, -10),
+                theme-color-level($color, -0.8)
+            );
+        } @else if $color == "warning" {
+            @include badge-soft-variant(
+                theme-color-level($color, -10),
+                theme-color-level($color, 2.5)
+            );
+        } @else if $color == "danger" {
+            @include badge-soft-variant(
+                theme-color-level($color, -10),
+                theme-color-level($color, 4.5)
+            );
+        } @else {
+            @include badge-soft-variant(
+                theme-color-level($color, -10),
+                theme-color-level($color, 4.5)
+            );
+        }
     }
-  }
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
 }
