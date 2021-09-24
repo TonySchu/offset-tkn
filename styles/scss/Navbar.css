@@ -1,0 +1,5 @@
+/* Dropdown menu transition effect  */
+.navbar-dropdown-effect {
+  transform: translateY(-10px);
+  transition: all 1s ease;
+}

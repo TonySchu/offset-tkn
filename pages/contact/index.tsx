@@ -1,11 +1,9 @@
 import type { NextPage } from "next";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
+import DefaultTemplate, { SEO } from "../components/DefaultTemplate";
 
 const Contact: NextPage = () => {
   return (
-    <main className="main" id="top">
-      <Navbar />
+    <DefaultTemplate SEO={{ ...SEO }}>
       <section className="bg-extra-1 py-0">
         <div
           className="bg-holder"
@@ -280,9 +278,7 @@ const Contact: NextPage = () => {
         {/* end of .container*/}
       </section>
       {/* <section> close ============================*/}
-
-      <Footer />
-    </main>
+    </DefaultTemplate>
   );
 };
 

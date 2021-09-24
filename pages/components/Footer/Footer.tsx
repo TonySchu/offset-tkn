@@ -18,6 +18,7 @@ function Footer() {
                   <a
                     className="nav-item nav-link px-2 pl-0 text-800"
                     href={"/" + page.toLowerCase()}
+                    key={"footer" + page}
                   >
                     {page
                       .toLowerCase()
