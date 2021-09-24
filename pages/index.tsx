@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { NextPage } from "next";
 import Image from "next/image";
 import React from "react";
+import Companies, {
+  companiesBannerStyle,
+} from "./components/Companies/Companies";
 import DefaultTemplate, { SEO } from "./components/DefaultTemplate";
 import Profile from "./components/Team/Profile";
 
@@ -76,46 +79,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xxl-10 col-xl-9 col-lg-8 col-10 mb-md-4 mb-lg-0 text-center">
-              <h6 className="mb-xxl-6 mb-xl-5 mb-lg-4 mb-md-4 text-800 font-weight-bold fs-md-0 fs--1 position-relative z-index-1">
-                trusted by companies like this
-              </h6>
-              <div
-                className="owl-carousel owl-carousel-theme owl-theme owl-dot-round owl-theme-primary mb-3"
-                data-options='{"autoplay":true,"loop":true,"dotsEach":true,"margin":50,"autoplayHoverPause":true,"responsive":{"0":{"items":3,"dotsEach":false,"dots":false,"margin":30},"600":{"items":4,"dotsEach":false,"dots":false},"1000":{"items":5,"dotsEach":true}}}'
-              >
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/microsoft-logo.png"
-                  width={191}
-                />
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/airbnb-logo.png"
-                  width={156}
-                />
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/google-logo.png"
-                  width={162}
-                />
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/Spotify_Logo.png"
-                  width={191}
-                />
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/Paypal-logo.png"
-                  width={162}
-                />
-                <img
-                  className="img-fluid"
-                  src="assets/img/logos/microsoft-logo.png"
-                  width={191}
-                />
-              </div>
-            </div>
+            <Companies
+              title="Trusted By Companies Like This"
+              page={companiesBannerStyle.home}
+            />
           </div>
         </div>
       </section>

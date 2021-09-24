@@ -150,10 +150,7 @@ const Crypto: NextPage = () => {
               </div>
             </div>
           </div>
-          <Companies
-            title="Trusted By Companies Like This"
-            page={companiesBannerStyle.crypto}
-          />
+          <Companies title="Our Partners" page={companiesBannerStyle.crypto} />
         </div>
       </section>
       <img
