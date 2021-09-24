@@ -8,16 +8,11 @@ export const companiesBannerStyle = {
 
 function Companies(props: { title: string; page: string }) {
   return (
-    <div className={props.page} style={{ zIndex: "1" }}>
+    <div className={props.page} style={{ zIndex: "1" as any }}>
       <h5 className="text-500 font-weight-bold">{props.title}</h5>
       <div className="row justify-content-center">
         <div className="col-10">
-          <div
-            className="
-                                    
-                                    mt-lg-5 mt-3
-                                "
-          >
+          <div className="mt-lg-5 mt-3">
             {COMPANIES.map((companie) => (
               <img
                 className="img-fluid ml-3"
