@@ -13,7 +13,10 @@ function Navbar() {
     }
   }
   return (
-    <nav className="navbar bg-dark navbar-dark navbar-expand-lg py-3 sticky-kit ">
+    <nav
+      className="navbar bg-dark navbar-dark navbar-expand-lg py-3 sticky-kit "
+      style={{ position: "fixed", width: "100%", top: "0" }}
+    >
       <div className="container">
         <a className="navbar-brand" href="/">
           <img src="assets/img/logos/Normal.png" alt="logo" width={100} />

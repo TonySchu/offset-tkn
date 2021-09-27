@@ -12,7 +12,7 @@ import { team } from "./team";
 const Home: NextPage = () => {
   return (
     <DefaultTemplate SEO={{ ...SEO }}>
-      <section className="bg-dark py-xxl-11 py-xl-8 py-lg-6 py-0 ">
+      <section className="bg-dark pt-8">
         <div
           className="bg-holder"
           style={{
