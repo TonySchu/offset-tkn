@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/image";
 import React from "react";
@@ -10,6 +11,19 @@ import Profile from "./components/Team/Profile";
 import { team } from "./team";
 
 const Home: NextPage = () => {
+  async function sendEmail(userEmail: string) {
+    let result;
+    try {
+      result = axios.post("http://localhost:3000/api/email", {
+        userEmail: userEmail,
+      });
+    } catch (error) {
+      console.log(error);
+      result = error;
+    }
+
+    return result;
+  }
   return (
     <DefaultTemplate SEO={{ ...SEO }}>
       <section className="bg-dark pt-8">
@@ -52,7 +66,7 @@ const Home: NextPage = () => {
                       <div className="mailbluster-feedback" />
                     </div>
                   </div>
-                  <div className="form-row justify-content-center align-items-center">
+                  <form className="form-row justify-content-center align-items-center">
                     <div className="col-auto mr-md-2">
                       <input
                         className="form-control bg-secondary border border-secondary text-white mt-3"
@@ -62,11 +76,19 @@ const Home: NextPage = () => {
                       />
                     </div>
                     <div className="col-auto mt-md-0">
-                      <button className="btn btn-primary mt-3" type="submit">
+                      <button
+                        className="btn btn-primary mt-3"
+                        type="submit"
+                        onClick={() => {
+                          sendEmail("cherif.khlass@teclead.de")
+                            .then(console.log)
+                            .catch(console.log);
+                        }}
+                      >
                         Get access
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </form>
               </div>
               <div className="row justify-content-center">
@@ -419,8 +441,9 @@ const Home: NextPage = () => {
                 className="slick-carousel slick-theme-primary slick-vertical-dots"
                 data-slick='{"vertical":true,"verticalSwiping":true,"arrows":false,"autoplay":true,"autoplaySpeed":1000,"slidesToScroll":1,"mobileFirst":true,"slidesToShow":2,"responsive":[{"breakpoint":1024,"settings":{"dots":true}},{"breakpoint":600,"settings":{"dots":true}},{"breakpoint":300,"settings":{"dots":true,"verticalSwiping":false,"vertical":false,"slidesToShow":1}}]}'
               >
-                {team.map((member) => (
+                {team.map((member, index) => (
                   <Profile
+                    key={index}
                     name={member.name}
                     roles={member.roles}
                     alt={member.name}

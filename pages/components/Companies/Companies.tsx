@@ -19,6 +19,7 @@ function Companies(props: { title: string; page: string }) {
                 src={companie}
                 alt="microsoft-logo"
                 width={156}
+                key={companie.toUpperCase()}
               />
             ))}
           </div>
