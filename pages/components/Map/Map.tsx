@@ -826,10 +826,10 @@ const mapStyles = {
     },
   ],
 };
+const state = {
+  myMarkers: [{ latitude: 52.5096577, longitude: 13.4250002 }],
+};
 const MapContainer = () => {
-  const state = {
-    myMarkers: [{ latitude: 52.5096577, longitude: 13.4250002 }],
-  };
   const displayMarkers = () => {
     return state.myMarkers.map((mark, index) => {
       return (
@@ -887,7 +887,17 @@ const MapContainer = () => {
             }}
           >
             <h3>Teclead GmbH</h3>
-            <p>Ackerstraße 23, 10115 Berlin, Germany</p>
+            <a
+              target="_blank"
+              href={
+                "https://www.google.com/maps/dir/?api=1&destination=" +
+                state.myMarkers[0].latitude +
+                "+" +
+                state.myMarkers[0].longitude
+              }
+            >
+              <p>Ackerstraße 23, 10115 Berlin, Germany</p>{" "}
+            </a>
           </div>
         )}
       </Map>
