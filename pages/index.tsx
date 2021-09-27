@@ -7,6 +7,7 @@ import Companies, {
 } from "./components/Companies/Companies";
 import DefaultTemplate, { SEO } from "./components/DefaultTemplate";
 import Profile from "./components/Team/Profile";
+import { team } from "./team";
 
 const Home: NextPage = () => {
   return (
@@ -418,85 +419,20 @@ const Home: NextPage = () => {
                 className="slick-carousel slick-theme-primary slick-vertical-dots"
                 data-slick='{"vertical":true,"verticalSwiping":true,"arrows":false,"autoplay":true,"autoplaySpeed":1000,"slidesToScroll":1,"mobileFirst":true,"slidesToShow":2,"responsive":[{"breakpoint":1024,"settings":{"dots":true}},{"breakpoint":600,"settings":{"dots":true}},{"breakpoint":300,"settings":{"dots":true,"verticalSwiping":false,"vertical":false,"slidesToShow":1}}]}'
               >
-                <Profile
-                  name="Lionel d’ costa"
-                  roles="Founder &amp; CEO"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-boy-1"
-                  src="/assets/img/team/adult-boy-1.png"
-                >
-                  A design platform should unite code, content, and design,
-                  helping people in each discipline collaborate. And That is
-                  Shape for you.
-                </Profile>
-                <Profile
-                  name="Mila dalush"
-                  roles="business developement manager"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-girl-1"
-                  src="/assets/img/team/adult-girl-1.png"
-                >
-                  Web publishing platforms should empower you to build whatever
-                  you like. Here at Shape we we work on that for you.
-                </Profile>
-                <Profile
-                  name="Mila dalush"
-                  roles="business developement manager"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-boy-2"
-                  src="/assets/img/team/adult-boy-2.png"
-                >
-                  Web publishing platforms should empower you to build whatever
-                  you like. Here at Shape we we work on that for you.
-                </Profile>
-                <Profile
-                  name="Mila dalush"
-                  roles="business developement manager"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-girl-1"
-                  src="/assets/img/team/adult-girl-2.png"
-                >
-                  Web publishing platforms should empower you to build whatever
-                  you like. Here at Shape we we work on that for you.
-                </Profile>
-                <Profile
-                  name="Mila dalush"
-                  roles="business developement manager"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-boy-3"
-                  src="/assets/img/team/adult-boy-3.png"
-                >
-                  Web publishing platforms should empower you to build whatever
-                  you like. Here at Shape we we work on that for you.
-                </Profile>
-                <Profile
-                  name="Mila dalush"
-                  roles="business developement manager"
-                  twitterLink="#"
-                  facebookLink="#"
-                  instagramLink="#"
-                  linkedinLink="#"
-                  alt="adult-girl-3"
-                  src="/assets/img/team/adult-girl-3.png"
-                >
-                  Web publishing platforms should empower you to build whatever
-                  you like. Here at Shape we we work on that for you.
-                </Profile>
+                {team.map((member) => (
+                  <Profile
+                    name={member.name}
+                    roles={member.roles}
+                    alt={member.name}
+                    src={member.src}
+                    twitterLink={member.twitterLink}
+                    facebookLink={member.facebookLink}
+                    instagramLink={member.instagramLink}
+                    linkedinLink={member.linkedinLink}
+                  >
+                    {member.description}
+                  </Profile>
+                ))}
               </div>
             </div>
           </div>
