@@ -4,7 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 node v14 is required for this project. First run:
 
+```bash
 nvm i 14
+```
 
 then, run the development server:
 
