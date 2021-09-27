@@ -2,9 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-node v14 is required for this project
+node v14 is required for this project. First run:
 
-First, run the development server:
+nvm i 14
+
+then, run the development server:
 
 ```bash
 npm run dev
