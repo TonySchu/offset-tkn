@@ -29,12 +29,7 @@ const Crypto: NextPage = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-7 col-md-9 col-11">
-              <h1
-                className="
-                                text-capitalize text-white
-                                fs-xxl-7 fs-xl-6 fs-sm-4 fs-2
-                            "
-              >
+              <h1 className="text-capitalize text-white fs-xxl-7 fs-xl-6 fs-sm-4 fs-2">
                 <span className="position-relative">
                   Turn your spare change
                 </span>

@@ -1,5 +1,4 @@
-import { GoogleApiWrapper } from "google-maps-react";
-import { useState } from "react";
+import GoogleMapReact from "google-map-react";
 
 const mapStyles = {
   Default: [
@@ -829,83 +828,34 @@ const mapStyles = {
 const state = {
   myMarkers: [{ latitude: 52.5096577, longitude: 13.4250002 }],
 };
-const MapContainer = () => {
-  const displayMarkers = () => {
-    return state.myMarkers.map((mark, index) => {
-      return (
-        <div key={index}></div>
-        // <Marker
-        //   id={index}
-        //   key={index}
-        //   position={{ lat: mark.latitude, lng: mark.longitude }}
-        //   onClick={() => setShowAdress(!showAddress)}
-        //   icon={{
-        //     url: "../assets/img/icons/map-marker.png",
-        //   }}
-        // />
-      );
-    });
+// const AnyReactComponent = ({ text }:any) => <div>{text}</div>;
+
+const Map = () => {
+  const defaultProps = {
+    center: {
+      lat: 52.5096577,
+      lng: 13.4250002,
+    },
+    zoom: 13,
   };
 
-  //Local States
-
-  const [showAddress, setShowAdress] = useState(false);
-
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "50vh",
-      }}
-      className="map"
-    >
-      {/* TODO: Remove the package and build your own map */}
-      {/* <Map
-        google={google}
-        zoom={13}
-        styles={mapStyles.Default}
-        initialCenter={{ lat: 52.5096577, lng: 13.4250002 }}
-        disableDefaultUI={true}
+    // Important! Always set the container height explicitly
+    <div style={{ position: "relative", width: "100%", height: "50vh" }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyDztI4eISLR8VxdK8LuLLfVeRR0wRmzQ_w" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+        // style={}
       >
-        {displayMarkers()}
-        {showAddress && (
-          <div
-            style={{
-              backgroundColor: "white",
-              fontWeight: 500,
-              fontFamily: "Roboto, sans-serif",
-              padding: "15px 25px",
-              boxSizing: "border-box",
-              top: 25,
-              border: "1px solid rgba(0, 0, 0, 0.12)",
-              borderRadius: 5,
-              left: "50%",
-              maxWidth: 375,
-              position: "absolute",
-              transform: "translateX(-50%)",
-              width: "calc(100% - 10px)",
-              zIndex: 1,
-            }}
-          >
-            <h3>Teclead GmbH</h3>
-            <a
-              target="_blank"
-              href={
-                "https://www.google.com/maps/dir/?api=1&destination=" +
-                state.myMarkers[0].latitude +
-                "+" +
-                state.myMarkers[0].longitude
-              }
-            >
-              <p>Ackerstraße 23, 10115 Berlin, Germany</p>{" "}
-            </a>
-          </div>
-        )}
-      </Map> */}
+        {/* <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text="My Marker"
+          /> */}
+      </GoogleMapReact>
     </div>
   );
 };
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyDztI4eISLR8VxdK8LuLLfVeRR0wRmzQ_w",
-})(MapContainer);
+
+export default Map;
