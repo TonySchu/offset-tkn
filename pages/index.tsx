@@ -85,6 +85,7 @@ const Home: NextPage = () => {
                         type="email"
                         name="email"
                         placeholder="Your Email"
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="col-auto mt-md-0">
@@ -92,7 +93,7 @@ const Home: NextPage = () => {
                         className="btn btn-primary mt-3"
                         type="submit"
                         onClick={(event) => {
-                          sendEmail(event, "john.einicke@teclead.de")
+                          sendEmail(event, email)
                             .then(console.log)
                             .catch(console.log);
                         }}
