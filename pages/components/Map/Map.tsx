@@ -1,4 +1,4 @@
-import { GoogleApiWrapper, Marker } from "google-maps-react";
+import { GoogleApiWrapper } from "google-maps-react";
 import { useState } from "react";
 
 const mapStyles = {
@@ -833,15 +833,16 @@ const MapContainer = () => {
   const displayMarkers = () => {
     return state.myMarkers.map((mark, index) => {
       return (
-        <Marker
-          id={index}
-          key={index}
-          position={{ lat: mark.latitude, lng: mark.longitude }}
-          onClick={() => setShowAdress(!showAddress)}
-          icon={{
-            url: "../assets/img/icons/map-marker.png",
-          }}
-        />
+        <div key={index}></div>
+        // <Marker
+        //   id={index}
+        //   key={index}
+        //   position={{ lat: mark.latitude, lng: mark.longitude }}
+        //   onClick={() => setShowAdress(!showAddress)}
+        //   icon={{
+        //     url: "../assets/img/icons/map-marker.png",
+        //   }}
+        // />
       );
     });
   };
