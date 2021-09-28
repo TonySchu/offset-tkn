@@ -3,9 +3,9 @@ import aboutSecondSec2 from "@img/gallery/about-second-sec2.png";
 import aboutSecondSec3 from "@img/gallery/about-second-sec3.png";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { team } from "../../public/team";
 import DefaultTemplate, { SEO } from "../components/DefaultTemplate";
 import Profile from "../components/Team/Profile";
-import { team } from "../team";
 
 const About: NextPage = () => {
   return (

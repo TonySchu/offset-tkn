@@ -1,5 +1,5 @@
 import React from "react";
-import { teamMember } from "../../types/teamMember";
+import { teamMember } from "../../../types/teamMember";
 import ProfileDescription from "./ProfileDescription";
 import ProfileImage from "./ProfileImage";
 

@@ -12,12 +12,12 @@ import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/image";
 import React, { SyntheticEvent, useState } from "react";
+import { team } from "../public/team";
 import Companies, {
   companiesBannerStyle,
 } from "./components/Companies/Companies";
 import DefaultTemplate, { SEO } from "./components/DefaultTemplate";
 import Profile from "./components/Team/Profile";
-import { team } from "./team";
 
 const Home: NextPage = () => {
   const [email, setEmail] = useState("");

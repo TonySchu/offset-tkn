@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { COMPANIES } from "../../companies";
+import { COMPANIES } from "../../../public/companies";
 
 export const companiesBannerStyle = {
   home: "col-xxl-10 col-xl-9 col-lg-8 col-10 mb-md-4 mb-lg-0 text-center",

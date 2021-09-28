@@ -1,6 +1,9 @@
+import logo from "@img/logos/Normal.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-import { PAGES } from "../../pages";
+import { PAGES } from "../../../public/pages";
 
 function Navbar() {
   const [toggle, setToggle] = useState<string>();
@@ -18,9 +21,11 @@ function Navbar() {
       style={{ position: "fixed", width: "100%", top: "0" }}
     >
       <div className="container">
-        <a className="navbar-brand" href="/">
-          <img src="assets/img/logos/Normal.png" alt="logo" width={100} />
-        </a>
+        <Link href="/">
+          <a className="navbar-brand">
+            <Image src={logo} alt="logo" width={100} />
+          </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
