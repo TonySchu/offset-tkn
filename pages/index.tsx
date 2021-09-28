@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import iPadProMockup from "@img/gallery/iPad-Pro-Mockup.png";
 import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/image";
-import React from "react";
+import React, { SyntheticEvent, useState } from "react";
 import Companies, {
   companiesBannerStyle,
 } from "./components/Companies/Companies";
@@ -11,8 +12,11 @@ import Profile from "./components/Team/Profile";
 import { team } from "./team";
 
 const Home: NextPage = () => {
-  async function sendEmail(userEmail: string) {
+  const [email, setEmail] = useState("");
+
+  async function sendEmail(event: SyntheticEvent, userEmail: string) {
     let result;
+    event.preventDefault();
     try {
       result = axios.post("http://localhost:3000/api/email", {
         userEmail: userEmail,
@@ -79,8 +83,8 @@ const Home: NextPage = () => {
                       <button
                         className="btn btn-primary mt-3"
                         type="submit"
-                        onClick={() => {
-                          sendEmail("cherif.khlass@teclead.de")
+                        onClick={(event) => {
+                          sendEmail(event, "john.einicke@teclead.de")
                             .then(console.log)
                             .catch(console.log);
                         }}
@@ -93,10 +97,14 @@ const Home: NextPage = () => {
               </div>
               <div className="row justify-content-center">
                 <div className="col-lg-8 col-md-8 col-10">
-                  <img
-                    className="img-fluid position-relative"
-                    src="assets/img/gallery/iPad-Pro-Mockup.png"
-                  />
+                  <div className="img-fluid position-relative">
+                    <Image
+                      src={iPadProMockup}
+                      alt="iPad-Pro"
+                      layout="responsive"
+                      objectFit="contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
