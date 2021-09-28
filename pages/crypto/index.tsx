@@ -1,4 +1,13 @@
+import videoBgImage from "@img/bg-img/video-bg-img.png";
+import cryptoBottomShape from "@img/illustrations/cripto-bottom-shape.png";
+import bitcoinCircle from "@img/logos/bitcoin-circle.svg";
+import clockThreeLogo from "@img/logos/clock-three.svg";
+import commentDots from "@img/logos/comment-dots.svg";
+import exchangeLogo from "@img/logos/exchange.svg";
+import lightbulbAltLogo from "@img/logos/lightbulb-alt.svg";
+import shieldLogo from "@img/logos/shield-check.svg";
 import type { NextPage } from "next";
+import Image from "next/image";
 import Companies, {
   companiesBannerStyle,
 } from "../components/Companies/Companies";
@@ -142,22 +151,18 @@ const Crypto: NextPage = () => {
           <div className="row justify-content-center mt-8">
             <div className="col-xl-10 col-lg-10 col-11">
               <div className="rounded-soft overflow-hidden">
-                <img
-                  className="player"
-                  src="assets/img/bg-img/video-bg-img.png"
-                  alt="player"
-                />
+                <Image src={videoBgImage} alt="video-bg-image" />
               </div>
             </div>
           </div>
           <Companies title="Our Partners" page={companiesBannerStyle.crypto} />
         </div>
       </section>
-      <img
-        className="img-fluid bg-white"
-        src="assets/img/illustrations/cripto-bottom-shape.png"
-        alt="microsoft-logo"
-      />
+
+      <div className="img-fluid bg-white">
+        <Image src={cryptoBottomShape} alt="cripto-bottom-shape" />
+      </div>
+
       {/* ============================================*/}
       {/* <section> begin ============================*/}
       <section className="overflow-hidden">
@@ -531,12 +536,10 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/shield-check.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={shieldLogo} alt="logo" />
+                        </div>
+
                         <h4
                           className="
                                                     pb-3
@@ -567,12 +570,9 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/exchange.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={exchangeLogo} alt="logo" />
+                        </div>
                         <h4
                           className="
                                                     pb-3
@@ -603,12 +603,9 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/clock-three.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={clockThreeLogo} alt="logo" />
+                        </div>
                         <h4
                           className="
                                                     pb-3
@@ -644,12 +641,9 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/comment-dots.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={commentDots} alt="logo" />
+                        </div>
                         <h4
                           className="
                                                     pb-3
@@ -685,12 +679,9 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/bitcoin-circle.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={bitcoinCircle} alt="logo" />
+                        </div>
                         <h4
                           className="
                                                     pb-3
@@ -721,12 +712,9 @@ const Crypto: NextPage = () => {
                                         "
                     >
                       <div className="card-body p-xl-5 p-3">
-                        <img
-                          className="mb-3"
-                          src="assets/img/logos/lightbulb-alt.svg"
-                          alt="logo"
-                          width={70}
-                        />
+                        <div className="mb-3">
+                          <Image src={lightbulbAltLogo} alt="logo" />
+                        </div>
                         <h4
                           className="
                                                     pb-3
