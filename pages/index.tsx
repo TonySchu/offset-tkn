@@ -1,5 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import iPadProDesignMockup from "@img/gallery/iPad-Pro-Design-Mockup.png";
 import iPadProMockup from "@img/gallery/iPad-Pro-Mockup.png";
+import dropboxLogo from "@img/icons/dropbox-logo.png";
+import hubstaffLogo from "@img/icons/hubstaff-logo.png";
+import icon1 from "@img/icons/icon-1.png";
+import icon3 from "@img/icons/icon-3.png";
+import icon from "@img/icons/icon.png";
+import sketchLogo from "@img/icons/Sketch_Logo.png";
+import slackLogo from "@img/icons/slack-logo.png";
 import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -174,7 +182,13 @@ const Home: NextPage = () => {
           <div className="row mt-7 justify-content-center">
             <div className="col-lg-4 col-md-8 mb-4 mb-lg-0">
               <div className="media p-xxl-4">
-                <img src="assets/img/icons/icon-1.png" width={60} />
+                <Image
+                  src={icon1}
+                  alt="icon1"
+                  objectFit="contain"
+                  width="60"
+                  height="60"
+                />
                 <div className="media-body ml-3">
                   <h5 className="font-weight-bold">
                     Create your account in Shape
@@ -188,7 +202,13 @@ const Home: NextPage = () => {
             </div>
             <div className="col-lg-4 col-md-8 mb-4 mb-lg-0">
               <div className="media p-xxl-4">
-                <img src="assets/img/icons/icon.png" width={60} />
+                <Image
+                  src={icon}
+                  alt="icon"
+                  objectFit="contain"
+                  width="60"
+                  height="60"
+                />
                 <div className="media-body ml-3">
                   <h5 className="font-weight-bold">
                     Start building beautiful Apps With shape
@@ -202,7 +222,13 @@ const Home: NextPage = () => {
             </div>
             <div className="col-lg-4 col-md-8 mb-4 mb-lg-0">
               <div className="media p-xxl-4">
-                <img src="assets/img/icons/icon-3.png" width={60} />
+                <Image
+                  src={icon3}
+                  alt="icon3"
+                  objectFit="contain"
+                  width="60"
+                  height="63"
+                />
                 <div className="media-body ml-3">
                   <h5 className="font-weight-bold">
                     Deploy your site and make money
@@ -235,9 +261,9 @@ const Home: NextPage = () => {
                 It’s Stylish by default.
               </h1>
               <p className="text-500 mt-4 w-xl-75">
-                With our built-in design system, it's easy to create beautiful
-                screens with ease. And because we separate style from layout,
-                you can try out new themes instantly.
+                With our built-in design system, it&apos;s easy to create
+                beautiful screens with ease. And because we separate style from
+                layout, you can try out new themes instantly.
               </p>
               <div className="row mt-6">
                 <div className="col-md-5">
@@ -279,10 +305,14 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="col-lg col-10 mt-6">
-              <img
-                className="img-fluid z-index-1 position-relative"
-                src="assets/img/gallery/iPad-Pro-Design-Mockup.png"
-              />
+              <div className="img-fluid z-index-1 position-relative">
+                <Image
+                  src={iPadProDesignMockup}
+                  alt="iPad-Pro"
+                  layout="responsive"
+                  objectFit="contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -312,10 +342,9 @@ const Home: NextPage = () => {
               <div className="row mt-5 justify-content-center justify-content-lg-start">
                 <div className="col-md-5 col-10 hover-cardgroup bg-extra-1 mb-xl-4 mb-3 mr-xl-4 mr-md-3 mb-3">
                   <div className="media align-items-center">
-                    <img
-                      className="img-fluid"
-                      src="assets/img/icons/slack-logo.png"
-                    />
+                    <div className="img-fluid">
+                      <Image src={slackLogo} alt="slackLogo" />
+                    </div>
                     <div className="card-body text-left">
                       <a className="stretched-link" href="#!" />
                       <p className="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">
@@ -329,10 +358,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="col-md-5 col-10 hover-cardgroup bg-extra-1 mb-xl-4 mb-3">
                   <div className="media align-items-center">
-                    <img
-                      className="img-fluid"
-                      src="assets/img/icons/dropbox-logo.png"
-                    />
+                    <Image src={dropboxLogo} alt="dropboxLogo" />
                     <div className="card-body text-left">
                       <a className="stretched-link" href="#!" />
                       <p className="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">
@@ -346,10 +372,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="col-md-5 col-10 hover-cardgroup bg-extra-1 mr-xl-4 mr-md-3 mb-3 mb-md-0">
                   <div className="media align-items-center">
-                    <img
-                      className="img-fluid"
-                      src="assets/img/icons/hubstaff-logo.png"
-                    />
+                    <Image src={hubstaffLogo} alt="hubstaffLogo" />
                     <div className="card-body text-left">
                       <a className="stretched-link" href="#!" />
                       <p className="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">
@@ -363,10 +386,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="col-md-5 col-10 hover-cardgroup bg-extra-1">
                   <div className="media align-items-center">
-                    <img
-                      className="img-fluid"
-                      src="assets/img/icons/Sketch_Logo.png"
-                    />
+                    <Image src={sketchLogo} alt="sketchLogo" />
                     <div className="card-body text-left">
                       <a className="stretched-link" href="#!" />
                       <p className="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">
@@ -401,11 +421,6 @@ const Home: NextPage = () => {
         <div className="container">
           <div className="row flex-center justify-content-xxl-between">
             <div className="col-xxl-5 col-xl-6 col-lg-7 col-11 pt-8 pb-xl-8 pb-4 pl-xxl-0 pl-xl-6 order-xl-1">
-              <img
-                className="position-absolute d-none d-lg-block w-50 r-0"
-                src="assets/img/illustrations/home/home-vector.png"
-                style={{ top: "5%" }}
-              />
               <div className="text-center text-xl-left position-relative">
                 <h1 className="font-weight-medium text-dark fs-xxl-5 fs-4">
                   <span className="position-relative">
