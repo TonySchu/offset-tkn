@@ -21,11 +21,13 @@ function Navbar() {
       style={{ position: "fixed", width: "100%", top: "0" }}
     >
       <div className="container">
-        <Link href="/">
-          <a className="navbar-brand">
-            <Image src={logo} alt="logo" width={100} />
-          </a>
-        </Link>
+        <div className="position-relative">
+          <Link href="/">
+            <a className="navbar-brand" style={{ width: "100px" }}>
+              <Image src={logo} alt="logo" objectFit="contain" layout="fill" />
+            </a>
+          </Link>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -43,16 +45,13 @@ function Navbar() {
           id="navbarStandard"
         >
           {PAGES.map((page) => (
-            <a
-              className="nav-link nav-item ml-auto"
-              href={"/" + page.toLowerCase()}
-              role="button"
-              key={"nav" + page}
-            >
-              {page
-                .toLowerCase()
-                .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())}
-            </a>
+            <Link href={"/" + page.toLowerCase()} key={"nav" + page}>
+              <a className="nav-link nav-item ml-auto" role="button">
+                {page
+                  .toLowerCase()
+                  .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())}
+              </a>
+            </Link>
           ))}
         </div>
 
