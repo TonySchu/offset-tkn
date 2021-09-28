@@ -159,8 +159,8 @@ const About: NextPage = () => {
                 data-slick='{"arrows":false,"autoplay":false,"autoplaySpeed":1000,"slidesToShow":1,"slidesToScroll":1,"dots":true}'
               >
                 <div className="row d-flex justify-content-center">
-                  {team.map((member) => (
-                    <div className="col-lg-6">
+                  {team.map((member, index) => (
+                    <div className="col-lg-6" key={index}>
                       <Profile
                         name={member.name}
                         roles={member.roles}

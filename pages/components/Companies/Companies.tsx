@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { COMPANIES } from "../../companies";
 
@@ -11,18 +12,21 @@ function Companies(props: { title: string; page: string }) {
     <div className={props.page} style={{ zIndex: "1" as any }}>
       <h5 className="text-500 font-weight-bold">{props.title}</h5>
       <div className="row justify-content-center">
-        <div className="col-10">
-          <div className="mt-lg-5 mt-3">
-            {COMPANIES.map((companie) => (
-              <img
-                className="img-fluid ml-3"
+        <div className="col-10 row">
+          {COMPANIES.map((companie) => (
+            <div
+              className="col-12 col-sm position-relative m-1"
+              key={companie.toUpperCase()}
+              style={{ height: "40px" }}
+            >
+              <Image
                 src={companie}
                 alt="microsoft-logo"
-                width={156}
-                key={companie.toUpperCase()}
+                objectFit="contain"
+                layout="fill"
               />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
