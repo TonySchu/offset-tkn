@@ -32,9 +32,9 @@ const Contact: NextPage = () => {
               <div className="overflow-hidden">
                 <p className="text-100 mt-4 w-lg-75">
                   Does your project need a jumpstart? Our best customers have a
-                  graveyard of design system attempts that just haven't quite
-                  caught on. They’re ready to bring in some outside help to gain
-                  traction. Sound familiar? We’d love to chat.
+                  graveyard of design system attempts that just quite caught on.
+                  They’re ready to bring in some outside help to gain traction.
+                  Sound familiar? We’d love to chat.
                 </p>
               </div>
             </div>
