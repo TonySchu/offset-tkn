@@ -1,4 +1,8 @@
+import aboutSecondSec from "@img/gallery/about-second-sec.png";
+import aboutSecondSec2 from "@img/gallery/about-second-sec2.png";
+import aboutSecondSec3 from "@img/gallery/about-second-sec3.png";
 import type { NextPage } from "next";
+import Image from "next/image";
 import DefaultTemplate, { SEO } from "../components/DefaultTemplate";
 import Profile from "../components/Team/Profile";
 import { team } from "../team";
@@ -106,10 +110,7 @@ const About: NextPage = () => {
                 </p>
                 <div className="row">
                   <div className="col-xxl col-xl-11 col-md-10">
-                    <img
-                      className="img-fluid rounded-soft mt-6 position-relative"
-                      src="assets/img/gallery/about-second-sec3.png"
-                    />
+                    <Image alt="aboutSecondSec3" src={aboutSecondSec3} />
                   </div>
                 </div>
               </div>
@@ -117,16 +118,10 @@ const About: NextPage = () => {
             <div className="col-lg col-10 mt-4 mt-lg-0">
               <div className="row justify-content-end">
                 <div className="col-lg-11 col-6">
-                  <img
-                    className="img-fluid rounded-soft"
-                    src="assets/img/gallery/about-second-sec.png"
-                  />
+                  <Image alt="aboutSecondSec" src={aboutSecondSec} />
                 </div>
                 <div className="col-lg-8 mt-lg-4 col-6">
-                  <img
-                    className="img-fluid rounded-soft position-relative"
-                    src="assets/img/gallery/about-second-sec2.png"
-                  />
+                  <Image alt="aboutSecondSec2" src={aboutSecondSec2} />
                 </div>
               </div>
             </div>
@@ -159,8 +154,8 @@ const About: NextPage = () => {
                 data-slick='{"arrows":false,"autoplay":false,"autoplaySpeed":1000,"slidesToShow":1,"slidesToScroll":1,"dots":true}'
               >
                 <div className="row d-flex justify-content-center">
-                  {team.map((member) => (
-                    <div className="col-lg-6">
+                  {team.map((member, index) => (
+                    <div className="col-lg-6" key={index}>
                       <Profile
                         name={member.name}
                         roles={member.roles}
