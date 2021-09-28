@@ -18,6 +18,13 @@ export const SEO: SearchEngineOptimization = {
 type Props = {
   SEO: SearchEngineOptimization;
 };
+
+export async function getStaticProps() {
+  return {
+    props: { SEO },
+  };
+}
+
 function DefaultTemplate(props: React.PropsWithChildren<Props>) {
   return (
     <main className="main" id="top">
