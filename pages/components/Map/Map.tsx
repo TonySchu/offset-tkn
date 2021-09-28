@@ -1,4 +1,4 @@
-import { GoogleApiWrapper, Map, Marker } from "google-maps-react";
+import { GoogleApiWrapper, Marker } from "google-maps-react";
 import { useState } from "react";
 
 const mapStyles = {
@@ -859,7 +859,8 @@ const MapContainer = () => {
       }}
       className="map"
     >
-      <Map
+      {/* TODO: Remove the package and build your own map */}
+      {/* <Map
         google={google}
         zoom={13}
         styles={mapStyles.Default}
@@ -900,7 +901,7 @@ const MapContainer = () => {
             </a>
           </div>
         )}
-      </Map>
+      </Map> */}
     </div>
   );
 };
